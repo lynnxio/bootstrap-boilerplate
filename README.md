@@ -6,7 +6,6 @@
 -   No more slow website because of big css and js file size. (PurgeCss and Minify)
 -   Organized view's folder structure.
 -   No more configuring blueprint to change layout of page.
-- 
 
 ## Quick Start
 
