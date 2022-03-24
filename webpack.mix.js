@@ -1,5 +1,5 @@
-const mix = require('laravel-mix');
-require('laravel-mix-purgecss');
+const mix = require("laravel-mix");
+require("laravel-mix-purgecss");
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,25 +11,40 @@ require('laravel-mix-purgecss');
  |
  */
 
-mix.js('resources/js/site.js', 'public/js')
-    .sass('resources/sass/styles.scss', 'public/css')
+mix.js("resources/js/site.js", "public/js")
+    .sass("resources/sass/styles.scss", "public/css")
     .purgeCss({
         extend: {
             content: [
-                './resources/**/*.antlers.html',
-                './resources/**/*.blade.php',
-                './resources/**/*.vue',
-                './content/**/*.md'
-            ]
+                "./resources/**/*.antlers.html",
+                "./resources/**/*.blade.php",
+                "./resources/**/*.vue",
+                "./content/**/*.md",
+            ],
         },
-    })
-
-
+    });
 
 if (mix.inProduction()) {
     mix.version();
 }
 
+mix.browserSync({
+    host: '192.68.56.10',
+    port: 3000,
+    proxy: 'http://domain.test',
+    files: [
+        './**/*.css',
+        './app/**/*',
+        './config/**/*',
+        './resources/views/**/*',
+        './routes/**/*'
+    ],
+    open: false,
+    watchOptions: {
+        usePolling: true,
+        interval: 200
+    }
+});
 /*
  |--------------------------------------------------------------------------
  | Statamic Control Panel
