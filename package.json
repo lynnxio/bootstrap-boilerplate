@@ -2,8 +2,8 @@
     "name": "zunnurs01/bootstrap-starter-kit",
     "extra": {
         "statamic": {
-            "name": "Kung Fury Theme",
-            "description": "Kung Fury Theme starter kit"
+            "name": "Bootstrap Starter Kit",
+            "description": "Speed up your website development with ready  Bootstrap 5 + purgecss + minify + Browsersync + versioning."
         }
     },
     "private": true,
