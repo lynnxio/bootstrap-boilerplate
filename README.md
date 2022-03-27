@@ -17,8 +17,8 @@ statamic new your-site lynnx/bootstrap-starter-kit
 
 Or you can install manually into a fresh [Statamic installation](https://statamic.dev/installation) by running:
 
-```php please starter-kit:install bootstrap-starter-kit --clear-site```
+`php please starter-kit:install bootstrap-starter-kit --clear-site`
 
 ## Using BrowserSync
 
-- Auto reload when you run ```npm run watch```. Change the browsersync configuration (host, port and proxy) in the webpack.mix.js based on your development environment.
+-   Auto reload when you run `npm run watch`. Change the browsersync configuration (host, port and proxy) in the webpack.mix.js based on your development environment.

@@ -1,0 +1,65 @@
+title: Pages
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: author
+        field:
+          type: users
+          display: Author
+          default: current
+          localizable: true
+          max_items: 1
+      -
+        handle: template
+        field:
+          type: template
+          display: Page
+          localizable: true
+          width: 50
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          hide_partials: true
+          validate:
+            - 'starts_with:pages'
+          instructions: 'Select page file.'
+      -
+        handle: layout
+        field:
+          hide_partials: true
+          display: Layout
+          type: template
+          icon: template
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - 'starts_with:layout'
+          instructions: 'Select layout file.'
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true

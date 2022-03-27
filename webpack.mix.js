@@ -12,6 +12,11 @@ require("laravel-mix-purgecss");
  */
 
 mix.js("resources/js/site.js", "public/js")
+    //Uncomment this if you require jQuery
+
+    // .autoload({
+    //     jquery: ['$', 'window.jQuery', 'jQuery', 'jquery']
+    // })
     .sass("resources/sass/styles.scss", "public/css")
     .purgeCss({
         extend: {
@@ -28,6 +33,7 @@ if (mix.inProduction()) {
     mix.version();
 }
 
+//Setting based-on Homestead configuration.
 mix.browserSync({
     host: '192.68.56.10',
     port: 3000,
