@@ -1,8 +1,8 @@
 {
-    "name": "zunnurs01/bootstrap-starter-kit",
+    "name": "zunnurs01/bootstrap-boilerplate",
     "extra": {
         "statamic": {
-            "name": "Bootstrap Starter Kit",
+            "name": "Bootstrap boilerplate",
             "description": "Speed up your website development with ready  Bootstrap 5 + purgecss + minify + Browsersync + versioning."
         }
     },
