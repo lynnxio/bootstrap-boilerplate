@@ -1,3 +1,7 @@
+<img src="https://user-images.githubusercontent.com/28453847/160145495-e4d54605-db62-4a4e-af6b-20b356d4f897.png" width="600" height="350">
+
+# bootstrap-starter-kit
+
 ## Features
 
 -   Quick prototyping with everything ready for Bootstrap 5.
@@ -6,6 +10,7 @@
 -   No more slow website because of big css and js file size. (PurgeCss and Minify)
 -   Organized view's folder structure.
 -   No more configuring blueprint to change layout of page.
+-   jQuery boilerplate in webpack.
 
 ## Quick Start
 
@@ -17,8 +22,10 @@ statamic new your-site lynnx/bootstrap-starter-kit
 
 Or you can install manually into a fresh [Statamic installation](https://statamic.dev/installation) by running:
 
-`php please starter-kit:install bootstrap-starter-kit --clear-site`
+```php please starter-kit:install bootstrap-starter-kit --clear-site```
 
 ## Using BrowserSync
 
--   Auto reload when you run `npm run watch`. Change the browsersync configuration (host, port and proxy) in the webpack.mix.js based on your development environment.
+- Auto reload when you run ```npm run watch```. Change the browsersync configuration (host, port and proxy) in the webpack.mix.js based on your development environment.
+
+<img src="https://user-images.githubusercontent.com/28453847/160145558-a831180d-f2f3-48ab-b575-6b3addfd9120.png" width="600" height="500">
