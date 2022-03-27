@@ -17,15 +17,15 @@
 You can create a new site using the [Statamic CLI Tool](https://github.com/statamic/cli):
 
 ```
-statamic new your-site lynnx/bootstrap-starter-kit
+statamic new your-site lynnx/bootstrap-boilerplate
 ```
 
 Or you can install manually into a fresh [Statamic installation](https://statamic.dev/installation) by running:
 
-```php please starter-kit:install bootstrap-starter-kit --clear-site```
+`php please starter-kit:install bootstrap-boilerplate --clear-site`
 
 ## Using BrowserSync
 
-- Auto reload when you run ```npm run watch```. Change the browsersync configuration (host, port and proxy) in the webpack.mix.js based on your development environment.
+-   Auto reload when you run `npm run watch`. Change the browsersync configuration (host, port and proxy) in the webpack.mix.js based on your development environment.
 
 <img src="https://user-images.githubusercontent.com/28453847/160145558-a831180d-f2f3-48ab-b575-6b3addfd9120.png" width="600" height="500">
